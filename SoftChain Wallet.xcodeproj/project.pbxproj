@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9821126B63003A5091 /* AppDelegate.swift */; };
+		C4949E9B21126B63003A5091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9A21126B63003A5091 /* ViewController.swift */; };
+		C4949E9E21126B63003A5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4949E9C21126B63003A5091 /* Main.storyboard */; };
+		C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */; };
+		C4949EA321126B64003A5091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4949EA221126B64003A5091 /* Assets.xcassets */; };
+		C4949EA621126B64003A5091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4949EA421126B64003A5091 /* LaunchScreen.storyboard */; };
+		C4949EB121126B64003A5091 /* SoftChain_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949EB021126B64003A5091 /* SoftChain_WalletTests.swift */; };
+		C4949EBC21126B64003A5091 /* SoftChain_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4949EAD21126B64003A5091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4949E8D21126B63003A5091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4949E9421126B63003A5091;
+			remoteInfo = "SoftChain Wallet";
+		};
+		C4949EB821126B64003A5091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4949E8D21126B63003A5091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4949E9421126B63003A5091;
+			remoteInfo = "SoftChain Wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4949E9521126B63003A5091 /* SoftChain Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoftChain Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4949E9821126B63003A5091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4949E9A21126B63003A5091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4949E9D21126B63003A5091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4949EA021126B63003A5091 /* SoftChain_Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoftChain_Wallet.xcdatamodel; sourceTree = "<group>"; };
+		C4949EA221126B64003A5091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4949EA521126B64003A5091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4949EA721126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4949EAC21126B64003A5091 /* SoftChain WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoftChain WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4949EB021126B64003A5091 /* SoftChain_WalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftChain_WalletTests.swift; sourceTree = "<group>"; };
+		C4949EB221126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4949EB721126B64003A5091 /* SoftChain WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoftChain WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftChain_WalletUITests.swift; sourceTree = "<group>"; };
+		C4949EBD21126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4949E9221126B63003A5091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EA921126B64003A5091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EB421126B64003A5091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4949E8C21126B63003A5091 = {
+			isa = PBXGroup;
+			children = (
+				C4949E9721126B63003A5091 /* SoftChain Wallet */,
+				C4949EAF21126B64003A5091 /* SoftChain WalletTests */,
+				C4949EBA21126B64003A5091 /* SoftChain WalletUITests */,
+				C4949E9621126B63003A5091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4949E9621126B63003A5091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4949E9521126B63003A5091 /* SoftChain Wallet.app */,
+				C4949EAC21126B64003A5091 /* SoftChain WalletTests.xctest */,
+				C4949EB721126B64003A5091 /* SoftChain WalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4949E9721126B63003A5091 /* SoftChain Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				C4949E9821126B63003A5091 /* AppDelegate.swift */,
+				C4949E9A21126B63003A5091 /* ViewController.swift */,
+				C4949E9C21126B63003A5091 /* Main.storyboard */,
+				C4949EA221126B64003A5091 /* Assets.xcassets */,
+				C4949EA421126B64003A5091 /* LaunchScreen.storyboard */,
+				C4949EA721126B64003A5091 /* Info.plist */,
+				C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */,
+			);
+			path = "SoftChain Wallet";
+			sourceTree = "<group>";
+		};
+		C4949EAF21126B64003A5091 /* SoftChain WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4949EB021126B64003A5091 /* SoftChain_WalletTests.swift */,
+				C4949EB221126B64003A5091 /* Info.plist */,
+			);
+			path = "SoftChain WalletTests";
+			sourceTree = "<group>";
+		};
+		C4949EBA21126B64003A5091 /* SoftChain WalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */,
+				C4949EBD21126B64003A5091 /* Info.plist */,
+			);
+			path = "SoftChain WalletUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4949E9421126B63003A5091 /* SoftChain Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4949EC021126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain Wallet" */;
+			buildPhases = (
+				C4949E9121126B63003A5091 /* Sources */,
+				C4949E9221126B63003A5091 /* Frameworks */,
+				C4949E9321126B63003A5091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoftChain Wallet";
+			productName = "SoftChain Wallet";
+			productReference = C4949E9521126B63003A5091 /* SoftChain Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4949EAB21126B64003A5091 /* SoftChain WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4949EC321126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletTests" */;
+			buildPhases = (
+				C4949EA821126B64003A5091 /* Sources */,
+				C4949EA921126B64003A5091 /* Frameworks */,
+				C4949EAA21126B64003A5091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4949EAE21126B64003A5091 /* PBXTargetDependency */,
+			);
+			name = "SoftChain WalletTests";
+			productName = "SoftChain WalletTests";
+			productReference = C4949EAC21126B64003A5091 /* SoftChain WalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4949EB621126B64003A5091 /* SoftChain WalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4949EC621126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletUITests" */;
+			buildPhases = (
+				C4949EB321126B64003A5091 /* Sources */,
+				C4949EB421126B64003A5091 /* Frameworks */,
+				C4949EB521126B64003A5091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4949EB921126B64003A5091 /* PBXTargetDependency */,
+			);
+			name = "SoftChain WalletUITests";
+			productName = "SoftChain WalletUITests";
+			productReference = C4949EB721126B64003A5091 /* SoftChain WalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4949E8D21126B63003A5091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "SoftChain Foundation Ltd.";
+				TargetAttributes = {
+					C4949E9421126B63003A5091 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C4949EAB21126B64003A5091 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C4949E9421126B63003A5091;
+					};
+					C4949EB621126B64003A5091 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C4949E9421126B63003A5091;
+					};
+				};
+			};
+			buildConfigurationList = C4949E9021126B63003A5091 /* Build configuration list for PBXProject "SoftChain Wallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4949E8C21126B63003A5091;
+			productRefGroup = C4949E9621126B63003A5091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4949E9421126B63003A5091 /* SoftChain Wallet */,
+				C4949EAB21126B64003A5091 /* SoftChain WalletTests */,
+				C4949EB621126B64003A5091 /* SoftChain WalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4949E9321126B63003A5091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4949EA621126B64003A5091 /* LaunchScreen.storyboard in Resources */,
+				C4949EA321126B64003A5091 /* Assets.xcassets in Resources */,
+				C4949E9E21126B63003A5091 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EAA21126B64003A5091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EB521126B64003A5091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4949E9121126B63003A5091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4949E9B21126B63003A5091 /* ViewController.swift in Sources */,
+				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
+				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EA821126B64003A5091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4949EB121126B64003A5091 /* SoftChain_WalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4949EB321126B64003A5091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4949EBC21126B64003A5091 /* SoftChain_WalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4949EAE21126B64003A5091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4949E9421126B63003A5091 /* SoftChain Wallet */;
+			targetProxy = C4949EAD21126B64003A5091 /* PBXContainerItemProxy */;
+		};
+		C4949EB921126B64003A5091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4949E9421126B63003A5091 /* SoftChain Wallet */;
+			targetProxy = C4949EB821126B64003A5091 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4949E9C21126B63003A5091 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4949E9D21126B63003A5091 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4949EA421126B64003A5091 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4949EA521126B64003A5091 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4949EBE21126B64003A5091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4949EBF21126B64003A5091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4949EC121126B64003A5091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4949EC221126B64003A5091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4949EC421126B64003A5091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftChain Wallet.app/SoftChain Wallet";
+			};
+			name = Debug;
+		};
+		C4949EC521126B64003A5091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftChain Wallet.app/SoftChain Wallet";
+			};
+			name = Release;
+		};
+		C4949EC721126B64003A5091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SoftChain Wallet";
+			};
+			name = Debug;
+		};
+		C4949EC821126B64003A5091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82YFV2CEZJ;
+				INFOPLIST_FILE = "SoftChain WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SoftChain Wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4949E9021126B63003A5091 /* Build configuration list for PBXProject "SoftChain Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4949EBE21126B64003A5091 /* Debug */,
+				C4949EBF21126B64003A5091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4949EC021126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4949EC121126B64003A5091 /* Debug */,
+				C4949EC221126B64003A5091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4949EC321126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4949EC421126B64003A5091 /* Debug */,
+				C4949EC521126B64003A5091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4949EC621126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4949EC721126B64003A5091 /* Debug */,
+				C4949EC821126B64003A5091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4949EA021126B63003A5091 /* SoftChain_Wallet.xcdatamodel */,
+			);
+			currentVersion = C4949EA021126B63003A5091 /* SoftChain_Wallet.xcdatamodel */;
+			path = SoftChain_Wallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4949E8D21126B63003A5091 /* Project object */;
+}
