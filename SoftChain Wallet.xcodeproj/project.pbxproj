@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43B76182113DE6400BD195A /* UIButtomExt.swift */; };
 		C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9821126B63003A5091 /* AppDelegate.swift */; };
-		C4949E9B21126B63003A5091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9A21126B63003A5091 /* ViewController.swift */; };
+		C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9A21126B63003A5091 /* ButtomDemoViewController.swift */; };
 		C4949E9E21126B63003A5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4949E9C21126B63003A5091 /* Main.storyboard */; };
 		C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */; };
 		C4949EA321126B64003A5091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4949EA221126B64003A5091 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		C43B76182113DE6400BD195A /* UIButtomExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtomExt.swift; sourceTree = "<group>"; };
 		C4949E9521126B63003A5091 /* SoftChain Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoftChain Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4949E9821126B63003A5091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4949E9A21126B63003A5091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4949E9A21126B63003A5091 /* ButtomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomDemoViewController.swift; sourceTree = "<group>"; };
 		C4949E9D21126B63003A5091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4949EA021126B63003A5091 /* SoftChain_Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoftChain_Wallet.xcdatamodel; sourceTree = "<group>"; };
 		C4949EA221126B64003A5091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C4949E9821126B63003A5091 /* AppDelegate.swift */,
-				C4949E9A21126B63003A5091 /* ViewController.swift */,
+				C4949E9A21126B63003A5091 /* ButtomDemoViewController.swift */,
 				C4949E9C21126B63003A5091 /* Main.storyboard */,
 				C4949EA221126B64003A5091 /* Assets.xcassets */,
 				C4949EA421126B64003A5091 /* LaunchScreen.storyboard */,
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */,
-				C4949E9B21126B63003A5091 /* ViewController.swift in Sources */,
+				C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */,
 				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
 				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
 			);
