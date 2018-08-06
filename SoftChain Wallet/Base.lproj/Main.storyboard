@@ -36,9 +36,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8hH-Rq-oAL" kind="relationship" relationship="viewControllers" id="g5d-RG-8rj"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nus-77-Xmi"/>
                         <segue destination="w7l-Fe-Iqw" kind="relationship" relationship="viewControllers" id="D9s-UX-mxm"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nus-77-Xmi"/>
+                        <segue destination="8hH-Rq-oAL" kind="relationship" relationship="viewControllers" id="g5d-RG-8rj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ex0-W0-azU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,56 +78,34 @@
             </objects>
             <point key="canvasLocation" x="386" y="-534"/>
         </scene>
-        <!--Item-->
+        <!--Wallet-->
         <scene sceneID="PtK-DI-PkU">
             <objects>
-                <viewController id="w7l-Fe-Iqw" sceneMemberID="viewController">
+                <viewController id="w7l-Fe-Iqw" customClass="WalletViewController" customModule="SoftChain_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gL7-2i-2Ul">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalCentering" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GoC-C2-2jT">
-                                <rect key="frame" x="16" y="101" width="343" height="464"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LR6-60-KwQ">
+                                <rect key="frame" x="16" y="269" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oh8-ig-ulp">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Sfm-7Q-6H8" appends="YES" id="ewX-wE-SMP"/>
-                                        </connections>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u1S-yI-rjK">
-                                        <rect key="frame" x="0.0" y="168" width="343" height="128"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="xT3-4v-ShI" appends="YES" id="B5x-vB-tDJ"/>
-                                        </connections>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAG-TX-qRg">
-                                        <rect key="frame" x="0.0" y="336" width="343" height="128"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="bDD-Ka-UTo" appends="YES" id="6at-mG-Apx"/>
-                                        </connections>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="0.37296872640000001" green="0.51628598449999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xTN-ce-42a"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gWq-HN-oiZ"/>
+                    <tabBarItem key="tabBarItem" title="Wallet" image="Wallet" landscapeImage="Wallet" largeContentSizeImage="Wallet" selectedImage="Wallet" id="gWq-HN-oiZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iad-nP-Es2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bDD-Ka-UTo"/>
                 <tapGestureRecognizer id="xT3-4v-ShI"/>
                 <tapGestureRecognizer id="Sfm-7Q-6H8"/>
             </objects>
-            <point key="canvasLocation" x="385" y="149"/>
+            <point key="canvasLocation" x="384.80000000000001" y="148.87556221889056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Wallet" width="30" height="30"/>
+    </resources>
 </document>
