@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C427EECB211DCFE4002DF1C8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C427EECA211DCFE4002DF1C8 /* TabBarViewController.swift */; };
+		3BEE008CD7F0734A80919EF1 /* Pods_SoftChain_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CB4B88CEFFE093D7033443 /* Pods_SoftChain_Wallet.framework */; };
+		A6278D9135B67E706F64E4DB /* Pods_SoftChain_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A074D75BC5CE26EA935C290 /* Pods_SoftChain_WalletTests.framework */; };
+		C03F573E46DFF84957A31176 /* Pods_SoftChain_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03581FAA6427674E97331B5B /* Pods_SoftChain_WalletUITests.framework */; };
 		C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43B76182113DE6400BD195A /* UIButtomExt.swift */; };
 		C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409CF32117BD7800C4B631 /* WalletViewController.swift */; };
 		C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409CF62117BE4F00C4B631 /* WelcomeViewController.swift */; };
@@ -40,7 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C427EECA211DCFE4002DF1C8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		03581FAA6427674E97331B5B /* Pods_SoftChain_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftChain_WalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A074D75BC5CE26EA935C290 /* Pods_SoftChain_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftChain_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4200A5E1D25824A9974A0E90 /* Pods-SoftChain WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletUITests/Pods-SoftChain WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B582F5D6948F8B7384C5B0CB /* Pods-SoftChain Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain Wallet.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain Wallet/Pods-SoftChain Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		C0CB4B88CEFFE093D7033443 /* Pods_SoftChain_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftChain_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A7B6B77BA66CF944AF203E /* Pods-SoftChain WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletUITests.release.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletUITests/Pods-SoftChain WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C343A2AB0B4506E67613B944 /* Pods-SoftChain Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain Wallet.release.xcconfig"; path = "Target Support Files/Pods-SoftChain Wallet/Pods-SoftChain Wallet.release.xcconfig"; sourceTree = "<group>"; };
 		C43B76182113DE6400BD195A /* UIButtomExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtomExt.swift; sourceTree = "<group>"; };
 		C4409CF32117BD7800C4B631 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		C4409CF62117BE4F00C4B631 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +67,8 @@
 		C4949EB721126B64003A5091 /* SoftChain WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoftChain WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftChain_WalletUITests.swift; sourceTree = "<group>"; };
 		C4949EBD21126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.release.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEE008CD7F0734A80919EF1 /* Pods_SoftChain_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6278D9135B67E706F64E4DB /* Pods_SoftChain_WalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,17 +92,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03F573E46DFF84957A31176 /* Pods_SoftChain_WalletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD03BD24885931FA4A51FEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B582F5D6948F8B7384C5B0CB /* Pods-SoftChain Wallet.debug.xcconfig */,
+				C343A2AB0B4506E67613B944 /* Pods-SoftChain Wallet.release.xcconfig */,
+				DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */,
+				E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */,
+				4200A5E1D25824A9974A0E90 /* Pods-SoftChain WalletUITests.debug.xcconfig */,
+				C2A7B6B77BA66CF944AF203E /* Pods-SoftChain WalletUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A07272AFE58EA102A314A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB4B88CEFFE093D7033443 /* Pods_SoftChain_Wallet.framework */,
+				3A074D75BC5CE26EA935C290 /* Pods_SoftChain_WalletTests.framework */,
+				03581FAA6427674E97331B5B /* Pods_SoftChain_WalletUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4409CF12117BD1100C4B631 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				C4409CF32117BD7800C4B631 /* WalletViewController.swift */,
-				C427EECA211DCFE4002DF1C8 /* TabBarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -120,6 +156,8 @@
 				C4949EAF21126B64003A5091 /* SoftChain WalletTests */,
 				C4949EBA21126B64003A5091 /* SoftChain WalletUITests */,
 				C4949E9621126B63003A5091 /* Products */,
+				1DD03BD24885931FA4A51FEC /* Pods */,
+				2A07272AFE58EA102A314A27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 0;
@@ -137,9 +175,9 @@
 		C4949E9721126B63003A5091 /* SoftChain Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C4E9BA57230D30BF0054AE73 /* MainView */,
 				C4409CF52117BE3000C4B631 /* WelcomeScreen */,
 				C4409CF22117BD2600C4B631 /* Extensions */,
-				C4409CF12117BD1100C4B631 /* ViewController */,
 				C4949E9821126B63003A5091 /* AppDelegate.swift */,
 				C4949E9C21126B63003A5091 /* Main.storyboard */,
 				C4949EA221126B64003A5091 /* Assets.xcassets */,
@@ -168,6 +206,14 @@
 			path = "SoftChain WalletUITests";
 			sourceTree = "<group>";
 		};
+		C4E9BA57230D30BF0054AE73 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C4409CF12117BD1100C4B631 /* ViewController */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4949EC021126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain Wallet" */;
 			buildPhases = (
+				AC2513F270FF0087D2CA9F0B /* [CP] Check Pods Manifest.lock */,
 				C4949E9121126B63003A5091 /* Sources */,
 				C4949E9221126B63003A5091 /* Frameworks */,
 				C4949E9321126B63003A5091 /* Resources */,
+				6D425BA6FD3D1B970AE5B307 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4949EC321126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletTests" */;
 			buildPhases = (
+				178E96A6A75BA850F9952896 /* [CP] Check Pods Manifest.lock */,
 				C4949EA821126B64003A5091 /* Sources */,
 				C4949EA921126B64003A5091 /* Frameworks */,
 				C4949EAA21126B64003A5091 /* Resources */,
@@ -210,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4949EC621126B64003A5091 /* Build configuration list for PBXNativeTarget "SoftChain WalletUITests" */;
 			buildPhases = (
+				89E9FCD6FD37DF815D2CD0E2 /* [CP] Check Pods Manifest.lock */,
 				C4949EB321126B64003A5091 /* Sources */,
 				C4949EB421126B64003A5091 /* Frameworks */,
 				C4949EB521126B64003A5091 /* Resources */,
@@ -236,13 +286,16 @@
 				TargetAttributes = {
 					C4949E9421126B63003A5091 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 					};
 					C4949EAB21126B64003A5091 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = C4949E9421126B63003A5091;
 					};
 					C4949EB621126B64003A5091 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = C4949E9421126B63003A5091;
 					};
 				};
@@ -295,6 +348,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		178E96A6A75BA850F9952896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoftChain WalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D425BA6FD3D1B970AE5B307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoftChain Wallet/Pods-SoftChain Wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoftChain Wallet/Pods-SoftChain Wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoftChain Wallet/Pods-SoftChain Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E9FCD6FD37DF815D2CD0E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoftChain WalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2513F270FF0087D2CA9F0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoftChain Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4949E9121126B63003A5091 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -304,7 +443,6 @@
 				C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */,
 				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
 				C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */,
-				C427EECB211DCFE4002DF1C8 /* TabBarViewController.swift in Sources */,
 				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
 				C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */,
 			);
@@ -477,6 +615,7 @@
 		};
 		C4949EC121126B64003A5091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B582F5D6948F8B7384C5B0CB /* Pods-SoftChain Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,13 +627,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C4949EC221126B64003A5091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C343A2AB0B4506E67613B944 /* Pods-SoftChain Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,13 +646,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		C4949EC421126B64003A5091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,7 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftChain Wallet.app/SoftChain Wallet";
 			};
@@ -534,6 +675,7 @@
 		};
 		C4949EC521126B64003A5091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftChain Wallet.app/SoftChain Wallet";
 			};
@@ -555,6 +697,7 @@
 		};
 		C4949EC721126B64003A5091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4200A5E1D25824A9974A0E90 /* Pods-SoftChain WalletUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,7 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "SoftChain Wallet";
 			};
@@ -575,6 +718,7 @@
 		};
 		C4949EC821126B64003A5091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A7B6B77BA66CF944AF203E /* Pods-SoftChain WalletUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.softchain.SoftChain-WalletUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "SoftChain Wallet";
 			};

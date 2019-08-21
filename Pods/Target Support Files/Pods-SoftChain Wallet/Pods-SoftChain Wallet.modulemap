@@ -1,0 +1,6 @@
+framework module Pods_SoftChain_Wallet {
+  umbrella header "Pods-SoftChain Wallet-umbrella.h"
+
+  export *
+  module * { export * }
+}
