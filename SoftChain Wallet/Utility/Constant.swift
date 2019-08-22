@@ -8,8 +8,18 @@
 
 import Foundation
 
+//URL
+let DEV_NET = "http://jrpc.devnet.quarkchain.io:38391"
+let MAIN_NET = "http://jrpc.mainnet.quarkchain.io:38391"
+
 //Segue
 let TO_IMPORTVC = "toImportVC"
 
 //User Defaults
 let LOGGED_IN_KEY = "loggedIn"
+
+//Header
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]
+
