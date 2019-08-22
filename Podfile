@@ -7,6 +7,8 @@ target 'SoftChain Wallet' do
 
   # Pods for SoftChain Wallet
   pod 'HDWalletKit'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'SoftChain WalletTests' do
     inherit! :search_paths

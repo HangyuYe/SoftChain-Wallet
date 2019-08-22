@@ -16,6 +16,7 @@ class ImportVC: UIViewController {
     @IBOutlet weak var comfirmTextField: UITextField!
     
     var address: String?
+    let shardID: String = "00000000"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class ImportVC: UIViewController {
         guard let privateKey = privateKeyTextField.text, privateKeyTextField.text != "" else { return }
         let userPrivateKey = PrivateKey.init(pk: privateKey, coin: .ethereum)
         self.address = (userPrivateKey?.publicKey.address)!
+        self.address = self.address! + shardID
         let noti = Notification.Name("walletAddress")
         NotificationCenter.default.post(name: noti, object: self.address)
     }

@@ -25,6 +25,7 @@
 		C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EA230E9A6000CFFC86 /* ImportVC.swift */; };
 		C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */; };
 		C4D524F0230EC13200CFFC86 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EF230EC13200CFFC86 /* Constant.swift */; };
+		C4D524F2230EE78000CFFC86 /* GetBalanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524F1230EE78000CFFC86 /* GetBalanceServices.swift */; };
 		C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		C4D524EA230E9A6000CFFC86 /* ImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportVC.swift; sourceTree = "<group>"; };
 		C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
 		C4D524EF230EC13200CFFC86 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C4D524F1230EE78000CFFC86 /* GetBalanceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceServices.swift; sourceTree = "<group>"; };
 		C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
 		DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.release.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */,
+				C4D524F1230EE78000CFFC86 /* GetBalanceServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */,
 				C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */,
 				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
+				C4D524F2230EE78000CFFC86 /* GetBalanceServices.swift in Sources */,
 				C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */,
 				C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */,
 				C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */,
