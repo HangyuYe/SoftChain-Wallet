@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		C4949EA621126B64003A5091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4949EA421126B64003A5091 /* LaunchScreen.storyboard */; };
 		C4949EB121126B64003A5091 /* SoftChain_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949EB021126B64003A5091 /* SoftChain_WalletTests.swift */; };
 		C4949EBC21126B64003A5091 /* SoftChain_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */; };
+		C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EA230E9A6000CFFC86 /* ImportVC.swift */; };
+		C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */; };
+		C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,10 @@
 		C4949EB721126B64003A5091 /* SoftChain WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoftChain WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftChain_WalletUITests.swift; sourceTree = "<group>"; };
 		C4949EBD21126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D524EA230E9A6000CFFC86 /* ImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportVC.swift; sourceTree = "<group>"; };
+		C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
+		C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
+		C4E9BA5B230D9CC80054AE73 /* Wallet-Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Wallet-Playground.playground"; path = "../Wallet-Playground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.release.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +116,6 @@
 				4200A5E1D25824A9974A0E90 /* Pods-SoftChain WalletUITests.debug.xcconfig */,
 				C2A7B6B77BA66CF944AF203E /* Pods-SoftChain WalletUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C4409CF32117BD7800C4B631 /* WalletViewController.swift */,
+				C4D524EA230E9A6000CFFC86 /* ImportVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -175,6 +182,8 @@
 		C4949E9721126B63003A5091 /* SoftChain Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C4D524E9230E4A8F00CFFC86 /* Services */,
+				C4E9BA58230D98F90054AE73 /* Wallet Core */,
 				C4E9BA57230D30BF0054AE73 /* MainView */,
 				C4409CF52117BE3000C4B631 /* WelcomeScreen */,
 				C4409CF22117BD2600C4B631 /* Extensions */,
@@ -184,6 +193,7 @@
 				C4949EA421126B64003A5091 /* LaunchScreen.storyboard */,
 				C4949EA721126B64003A5091 /* Info.plist */,
 				C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */,
+				C4E9BA5B230D9CC80054AE73 /* Wallet-Playground.playground */,
 			);
 			path = "SoftChain Wallet";
 			sourceTree = "<group>";
@@ -206,12 +216,28 @@
 			path = "SoftChain WalletUITests";
 			sourceTree = "<group>";
 		};
+		C4D524E9230E4A8F00CFFC86 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C4E9BA57230D30BF0054AE73 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
 				C4409CF12117BD1100C4B631 /* ViewController */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		C4E9BA58230D98F90054AE73 /* Wallet Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */,
+			);
+			path = "Wallet Core";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,7 +468,10 @@
 				C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */,
 				C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */,
 				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
+				C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */,
 				C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */,
+				C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */,
+				C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */,
 				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
 				C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */,
 			);
