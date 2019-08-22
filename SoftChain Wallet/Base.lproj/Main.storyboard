@@ -142,16 +142,32 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytn-k1-8aK">
-                                                <rect key="frame" x="142" y="528" width="91" height="30"/>
-                                                <state key="normal" title="&gt; Import now"/>
+                                                <rect key="frame" x="149" y="525" width="77" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Import now"/>
+                                                <connections>
+                                                    <action selector="importWallet:" destination="w7l-Fe-Iqw" eventType="touchUpInside" id="B3r-CU-Nhi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmz-uH-2Lq">
+                                                <rect key="frame" x="165" y="484" width="45" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteBtnPressed:" destination="w7l-Fe-Iqw" eventType="touchUpInside" id="L8g-ab-GiD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="YXx-UH-NOY" firstAttribute="leading" secondItem="3z8-Y7-B2Y" secondAttribute="leading" constant="16" id="AyD-Ba-04E"/>
+                                            <constraint firstItem="Ytn-k1-8aK" firstAttribute="top" secondItem="gmz-uH-2Lq" secondAttribute="bottom" constant="8" id="ErN-lT-q1Y"/>
                                             <constraint firstItem="Ytn-k1-8aK" firstAttribute="centerX" secondItem="3z8-Y7-B2Y" secondAttribute="centerX" id="GsG-bk-BeX"/>
                                             <constraint firstAttribute="trailing" secondItem="YXx-UH-NOY" secondAttribute="trailing" constant="16" id="MC3-Tr-eLN"/>
                                             <constraint firstItem="YXx-UH-NOY" firstAttribute="top" secondItem="3z8-Y7-B2Y" secondAttribute="top" constant="30" id="SWl-bk-RbW"/>
+                                            <constraint firstItem="gmz-uH-2Lq" firstAttribute="centerX" secondItem="3z8-Y7-B2Y" secondAttribute="centerX" id="fCX-Zc-b1B"/>
                                             <constraint firstAttribute="bottom" secondItem="Ytn-k1-8aK" secondAttribute="bottom" constant="40" id="n6W-y0-Tng"/>
                                         </constraints>
                                     </view>
@@ -180,6 +196,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="oOz-OK-EXe" id="ebp-BJ-azb"/>
                         <outlet property="balanceLabel" destination="hhc-c5-NUN" id="T9h-qV-SQD"/>
+                        <outlet property="deleteBtn" destination="gmz-uH-2Lq" id="4ch-tY-2Sj"/>
                         <outlet property="importBtn" destination="Ytn-k1-8aK" id="3Z7-le-ay3"/>
                         <segue destination="yTG-DM-dgc" kind="show" identifier="toImportVC" id="wpw-qi-45A"/>
                     </connections>
@@ -197,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZA-NG-vCi">
-                                <rect key="frame" x="40" y="128" width="295" height="30"/>
+                                <rect key="frame" x="40" y="104" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -209,19 +226,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-25-y7J">
-                                <rect key="frame" x="40" y="408.5" width="295" height="30"/>
+                                <rect key="frame" x="40" y="328.5" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-Ez-CIZ">
-                                <rect key="frame" x="40" y="318.5" width="295" height="30"/>
+                                <rect key="frame" x="40" y="238.5" width="295" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCC-kn-Ybj">
-                                <rect key="frame" x="150.5" y="478.5" width="74" height="45"/>
+                                <rect key="frame" x="150.5" y="398.5" width="74" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Import">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,13 +248,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passworkd:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G57-vz-Jov">
-                                <rect key="frame" x="40" y="286.5" width="295" height="24"/>
+                                <rect key="frame" x="40" y="206.5" width="295" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comfirm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1P-3U-1Fw">
-                                <rect key="frame" x="40" y="376.5" width="295" height="24"/>
+                                <rect key="frame" x="40" y="296.5" width="295" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -248,7 +265,7 @@
                             <constraint firstItem="cZA-NG-vCi" firstAttribute="leading" secondItem="4Lg-oD-lJz" secondAttribute="leading" constant="40" id="1vZ-rk-QIl"/>
                             <constraint firstItem="kCC-kn-Ybj" firstAttribute="top" secondItem="WLp-25-y7J" secondAttribute="bottom" constant="40" id="3ai-SB-aMp"/>
                             <constraint firstItem="4Lg-oD-lJz" firstAttribute="trailing" secondItem="WLp-25-y7J" secondAttribute="trailing" constant="40" id="44l-Wg-taA"/>
-                            <constraint firstItem="qp5-Ez-CIZ" firstAttribute="centerY" secondItem="ZCS-rk-AXo" secondAttribute="centerY" id="5I0-aW-GpX"/>
+                            <constraint firstItem="qp5-Ez-CIZ" firstAttribute="centerY" secondItem="ZCS-rk-AXo" secondAttribute="centerY" constant="-80" id="5I0-aW-GpX"/>
                             <constraint firstItem="G57-vz-Jov" firstAttribute="trailing" secondItem="qp5-Ez-CIZ" secondAttribute="trailing" id="CjT-6Q-qR9"/>
                             <constraint firstItem="qp5-Ez-CIZ" firstAttribute="leading" secondItem="4Lg-oD-lJz" secondAttribute="leading" constant="40" id="Din-ic-zPN"/>
                             <constraint firstItem="FE5-Uf-nGq" firstAttribute="centerX" secondItem="ZCS-rk-AXo" secondAttribute="centerX" id="HK6-Ul-jcX"/>
@@ -261,7 +278,7 @@
                             <constraint firstItem="4Lg-oD-lJz" firstAttribute="trailing" secondItem="qp5-Ez-CIZ" secondAttribute="trailing" constant="40" id="kzC-5t-asR"/>
                             <constraint firstItem="G57-vz-Jov" firstAttribute="leading" secondItem="qp5-Ez-CIZ" secondAttribute="leading" id="mOc-ht-Qbu"/>
                             <constraint firstItem="WLp-25-y7J" firstAttribute="leading" secondItem="4Lg-oD-lJz" secondAttribute="leading" constant="40" id="or7-aa-k5p"/>
-                            <constraint firstItem="cZA-NG-vCi" firstAttribute="top" secondItem="FE5-Uf-nGq" secondAttribute="bottom" constant="40" id="qxj-F3-IQk"/>
+                            <constraint firstItem="cZA-NG-vCi" firstAttribute="top" secondItem="FE5-Uf-nGq" secondAttribute="bottom" constant="16" id="qxj-F3-IQk"/>
                             <constraint firstItem="FE5-Uf-nGq" firstAttribute="top" secondItem="4Lg-oD-lJz" secondAttribute="top" constant="40" id="vca-ka-1H2"/>
                             <constraint firstItem="4Lg-oD-lJz" firstAttribute="trailing" secondItem="cZA-NG-vCi" secondAttribute="trailing" constant="40" id="yc5-8d-daI"/>
                         </constraints>

@@ -24,6 +24,7 @@
 		C4949EBC21126B64003A5091 /* SoftChain_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949EBB21126B64003A5091 /* SoftChain_WalletUITests.swift */; };
 		C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EA230E9A6000CFFC86 /* ImportVC.swift */; };
 		C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */; };
+		C4D524F0230EC13200CFFC86 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D524EF230EC13200CFFC86 /* Constant.swift */; };
 		C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +73,8 @@
 		C4949EBD21126B64003A5091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D524EA230E9A6000CFFC86 /* ImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportVC.swift; sourceTree = "<group>"; };
 		C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
+		C4D524EF230EC13200CFFC86 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C4E9BA59230D9A7D0054AE73 /* HDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
-		C4E9BA5B230D9CC80054AE73 /* Wallet-Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Wallet-Playground.playground"; path = "../Wallet-Playground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DBA0F7E5D6347781149D5236 /* Pods-SoftChain WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E80A76AEFD6FE8A9906594B7 /* Pods-SoftChain WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftChain WalletTests.release.xcconfig"; path = "Target Support Files/Pods-SoftChain WalletTests/Pods-SoftChain WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +183,7 @@
 		C4949E9721126B63003A5091 /* SoftChain Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				C4D524EE230EC12100CFFC86 /* Utility */,
 				C4D524E9230E4A8F00CFFC86 /* Services */,
 				C4E9BA58230D98F90054AE73 /* Wallet Core */,
 				C4E9BA57230D30BF0054AE73 /* MainView */,
@@ -193,7 +195,6 @@
 				C4949EA421126B64003A5091 /* LaunchScreen.storyboard */,
 				C4949EA721126B64003A5091 /* Info.plist */,
 				C4949E9F21126B63003A5091 /* SoftChain_Wallet.xcdatamodeld */,
-				C4E9BA5B230D9CC80054AE73 /* Wallet-Playground.playground */,
 			);
 			path = "SoftChain Wallet";
 			sourceTree = "<group>";
@@ -222,6 +223,14 @@
 				C4D524EC230E9CCC00CFFC86 /* UserDataServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C4D524EE230EC12100CFFC86 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C4D524EF230EC13200CFFC86 /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		C4E9BA57230D30BF0054AE73 /* MainView */ = {
@@ -472,6 +481,7 @@
 				C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */,
 				C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */,
 				C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */,
+				C4D524F0230EC13200CFFC86 /* Constant.swift in Sources */,
 				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
 				C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */,
 			);
