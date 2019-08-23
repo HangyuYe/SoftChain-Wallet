@@ -92,7 +92,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-1M-T9H">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-1M-T9H">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3z8-Y7-B2Y">
@@ -159,16 +159,29 @@
                                                     <action selector="deleteBtnPressed:" destination="w7l-Fe-Iqw" eventType="touchUpInside" id="L8g-ab-GiD"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-vA-auk">
+                                                <rect key="frame" x="137.5" y="174" width="100" height="36"/>
+                                                <color key="backgroundColor" red="0.18898457288742065" green="0.6418260931968689" blue="0.99853569269180298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BBd-iB-8yC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Detail">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="YXx-UH-NOY" firstAttribute="leading" secondItem="3z8-Y7-B2Y" secondAttribute="leading" constant="16" id="AyD-Ba-04E"/>
                                             <constraint firstItem="Ytn-k1-8aK" firstAttribute="top" secondItem="gmz-uH-2Lq" secondAttribute="bottom" constant="8" id="ErN-lT-q1Y"/>
                                             <constraint firstItem="Ytn-k1-8aK" firstAttribute="centerX" secondItem="3z8-Y7-B2Y" secondAttribute="centerX" id="GsG-bk-BeX"/>
+                                            <constraint firstItem="sF0-vA-auk" firstAttribute="top" secondItem="YXx-UH-NOY" secondAttribute="bottom" constant="16" id="JAo-e6-LZa"/>
                                             <constraint firstAttribute="trailing" secondItem="YXx-UH-NOY" secondAttribute="trailing" constant="16" id="MC3-Tr-eLN"/>
                                             <constraint firstItem="YXx-UH-NOY" firstAttribute="top" secondItem="3z8-Y7-B2Y" secondAttribute="top" constant="30" id="SWl-bk-RbW"/>
                                             <constraint firstItem="gmz-uH-2Lq" firstAttribute="centerX" secondItem="3z8-Y7-B2Y" secondAttribute="centerX" id="fCX-Zc-b1B"/>
                                             <constraint firstAttribute="bottom" secondItem="Ytn-k1-8aK" secondAttribute="bottom" constant="40" id="n6W-y0-Tng"/>
+                                            <constraint firstItem="sF0-vA-auk" firstAttribute="centerX" secondItem="3z8-Y7-B2Y" secondAttribute="centerX" id="xhU-AB-9jP"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -203,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iad-nP-Es2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="851"/>
+            <point key="canvasLocation" x="341.60000000000002" y="850.52473763118451"/>
         </scene>
         <!--ImportVC-->
         <scene sceneID="Sq7-T9-9Bs">

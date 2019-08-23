@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
 
 class UserWallet {
     
@@ -22,6 +23,7 @@ class UserWallet {
             defaults.set(newValue, forKey: LOGGED_IN_KEY)
         }
     }
+    
     
    
 }

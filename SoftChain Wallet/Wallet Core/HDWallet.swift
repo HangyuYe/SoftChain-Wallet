@@ -11,9 +11,11 @@ import HDWalletKit
 
 func createWallet() {
     let mnemonic = Mnemonic.create()
-    let seed = Mnemonic.createSeed(mnemonic: mnemonic)
+    let seed = Mnemonic.createSeed(mnemonic: mnemonic, withPassphrase: "password")
     let wallet = Wallet(seed: seed, coin: Coin.ethereum)
     let account = wallet.generateAccount()
     let address = account.address
     print(address)
 }
+
+

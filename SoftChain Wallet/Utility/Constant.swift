@@ -23,3 +23,6 @@ let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
 
+//Notification
+let WALLET_ADDRESS = Notification.Name("walletAddress")
+

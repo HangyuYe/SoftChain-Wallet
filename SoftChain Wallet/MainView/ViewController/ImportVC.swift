@@ -8,6 +8,7 @@
 
 import UIKit
 import HDWalletKit
+import SwiftKeychainWrapper
 
 class ImportVC: UIViewController {
 
@@ -26,27 +27,30 @@ class ImportVC: UIViewController {
     func createWallet() {
         guard let privateKey = privateKeyTextField.text, privateKeyTextField.text != "" else { return }
         let userPrivateKey = PrivateKey.init(pk: privateKey, coin: .ethereum)
+        KeychainWrapper.standard.set(privateKey, forKey: "privateKey")
         self.address = (userPrivateKey?.publicKey.address)!
         self.address = self.address! + shardID
-        let noti = Notification.Name("walletAddress")
-        NotificationCenter.default.post(name: noti, object: self.address)
+        NotificationCenter.default.post(name: WALLET_ADDRESS, object: self.address)
     }
     
     func checkPassConsistency () {
         guard let passcode = passTextField.text, passTextField.text != "" else { return }
         guard let comfirm = comfirmTextField.text, comfirmTextField.text != "" else { return }
-        let alert = UIAlertController(title: "Warning", message: "Twe input is not consistency, Please Try again!", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Warning", message: "The password is not consistency, Please Try again!", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(alertAction)
         
         if passcode == comfirm {
             createWallet()
-            print("Passcode is passed!")
+            UserWallet.instance.isLoggedIn = true
+            print("Password Comfired!")
         } else {
             self.present(alert, animated: true, completion: nil)
+            print("Password is invaild!")
         }
         
     }
+    
     
     func handleTapToDismiss() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))

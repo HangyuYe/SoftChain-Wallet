@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
+import HDWalletKit
 
 class WalletViewController: UIViewController {
 
@@ -20,13 +22,27 @@ class WalletViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(updateAddressLabel), name: NSNotification.Name("walletAddress"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(updateAddressLabel), name: WALLET_ADDRESS, object: nil)
+        setupImportBtn()
+        setupAddressLabel()
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         setupImportBtn()
         getAccountBalance()
+    }
+    
+    func setupAddressLabel() {
+        if UserWallet.instance.isLoggedIn {
+            let retrievedString: String? = KeychainWrapper.standard.string(forKey: "privateKey")
+            let pk = PrivateKey.init(pk: retrievedString!, coin: .ethereum)
+            let address = pk?.publicKey.address
+            addressLabel.text = address
+        } else {
+            print("Address label removed")
+            addressLabel.text = "...."
+        }
     }
     
     func setupImportBtn() {
@@ -45,10 +61,8 @@ class WalletViewController: UIViewController {
             if success {
                 self.balance = GetQKCBalance.instance.QKCBalance
                 self.balanceLabel.text = "QKC: \((self.convertor(hex: self.balance!)/1e+18))"
-                
             } else {
                 print("Error to get balance")
-                print(self.address as Any)
             }
         }
     }
@@ -70,7 +84,7 @@ class WalletViewController: UIViewController {
         guard let address = notif.object as? String else { return }
         addressLabel.text = address
         self.address = address
-        print("function called")
+        print("Function Called")
     }
     
     @IBAction func importWallet(_ sender: Any) {
@@ -78,6 +92,10 @@ class WalletViewController: UIViewController {
     }
     
     @IBAction func deleteBtnPressed(_ sender: Any) {
+        viewDidLoad()
+        UserWallet.instance.isLoggedIn = false
+        balanceLabel.text = "QKC: ----"
+        addressLabel.text = "----"
     }
     
     
