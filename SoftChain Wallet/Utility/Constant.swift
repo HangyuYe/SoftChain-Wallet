@@ -14,9 +14,13 @@ let MAIN_NET = "http://jrpc.mainnet.quarkchain.io:38391"
 
 //Segue
 let TO_IMPORTVC = "toImportVC"
+let TO_CREATEVC = "toCreateVC"
+let TO_CONFRIMVC = "toConfrimVC"
+let TO_COMPLETE_CREATE = "toCompleteVC"
+let TO_MAIN = "toMainVC"
 
 //User Defaults
-let LOGGED_IN_KEY = "loggedIn"
+let IMPORT_WALLET = "loggedIn"
 
 //Header
 let HEADER = [

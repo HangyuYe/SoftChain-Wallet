@@ -20,8 +20,16 @@ class WelcomeViewController: UIViewController {
     
     }
     
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+    }
     
+    @IBAction func createPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CREATEVC, sender: nil)
+    }
     
+    @IBAction func restorePressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_IMPORTVC, sender: nil)
+    }
     
     
     

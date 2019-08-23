@@ -19,6 +19,8 @@ class WalletViewController: UIViewController {
     
     var address: String?
     var balance: String?
+    var wallet: Wallet?
+    var account: Account?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +36,30 @@ class WalletViewController: UIViewController {
     }
     
     func setupAddressLabel() {
-        if UserWallet.instance.isLoggedIn {
-            let retrievedString: String? = KeychainWrapper.standard.string(forKey: "privateKey")
-            let pk = PrivateKey.init(pk: retrievedString!, coin: .ethereum)
-            let address = pk?.publicKey.address
-            addressLabel.text = address
+        if UserData.instance.isImportWallet {
+            if KeychainWrapper.standard.hasValue(forKey: "mnemonic") {
+                print("Import by mnemonic")
+                
+                guard let pass = KeychainWrapper.standard.string(forKey: "userPassword") else { return }
+                guard let mnemonic = KeychainWrapper.standard.string(forKey: "mnemonic") else { return }
+                let seed = Mnemonic.createSeed(mnemonic: mnemonic, withPassphrase: pass)
+                self.wallet = Wallet(seed: seed, coin: .ethereum)
+                for i in 0...60 {
+                    let accounts = self.wallet?.generateAddress(at: UInt32(i))
+                    print(accounts as Any)
+                }
+                
+                //self.address = self.account?.address
+                //addressLabel.text = address!
+
+            } else if KeychainWrapper.standard.hasValue(forKey: "privateKey") {
+                print("Import by private key")
+                let retrievedString: String? = KeychainWrapper.standard.string(forKey: "privateKey")
+                let pk = PrivateKey.init(pk: retrievedString!, coin: .ethereum)
+                let address = pk?.publicKey.address
+                addressLabel.text = address
+            }
+            
         } else {
             print("Address label removed")
             addressLabel.text = "...."
@@ -46,7 +67,7 @@ class WalletViewController: UIViewController {
     }
     
     func setupImportBtn() {
-        if UserWallet.instance.isLoggedIn {
+        if UserData.instance.isImportWallet {
             importBtn.isHidden = true
             deleteBtn.isHidden = false
         } else {
@@ -64,6 +85,14 @@ class WalletViewController: UIViewController {
             } else {
                 print("Error to get balance")
             }
+        }
+    }
+    
+    func jumpToWelcomeVC() {
+        if UserData.instance.isImportWallet {
+            viewDidLoad()
+        } else {
+            
         }
     }
     
@@ -93,7 +122,7 @@ class WalletViewController: UIViewController {
     
     @IBAction func deleteBtnPressed(_ sender: Any) {
         viewDidLoad()
-        UserWallet.instance.isLoggedIn = false
+        UserData.instance.isImportWallet = false
         balanceLabel.text = "QKC: ----"
         addressLabel.text = "----"
     }

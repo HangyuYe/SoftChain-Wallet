@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if UserData.instance.isImportWallet {
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            self.window?.makeKeyAndVisible()
+        } else {
+            self.window?.rootViewController = UIStoryboard(name: "WelcomeView", bundle: nil).instantiateInitialViewController()
+            self.window?.makeKeyAndVisible()
+        }
         // Override point for customization after application launch.
         return true
     }

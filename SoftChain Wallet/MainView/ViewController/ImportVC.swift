@@ -42,7 +42,7 @@ class ImportVC: UIViewController {
         
         if passcode == comfirm {
             createWallet()
-            UserWallet.instance.isLoggedIn = true
+            UserData.instance.isImportWallet = true
             print("Password Comfired!")
         } else {
             self.present(alert, animated: true, completion: nil)

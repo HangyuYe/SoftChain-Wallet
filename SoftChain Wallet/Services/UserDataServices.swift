@@ -9,22 +9,20 @@
 import Foundation
 import SwiftKeychainWrapper
 
-class UserWallet {
+class UserData {
     
-    static let instance = UserWallet()
+    static let instance = UserData()
     
     let defaults = UserDefaults.standard
     
-    var isLoggedIn: Bool {
+    var isImportWallet: Bool {
         get {
-            return defaults.bool(forKey: LOGGED_IN_KEY)
+            return defaults.bool(forKey: IMPORT_WALLET)
         }
         set {
-            defaults.set(newValue, forKey: LOGGED_IN_KEY)
+            defaults.set(newValue, forKey: IMPORT_WALLET)
         }
     }
-    
-    
    
 }
 

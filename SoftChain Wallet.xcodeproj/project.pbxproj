@@ -14,6 +14,9 @@
 		C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409CF32117BD7800C4B631 /* WalletViewController.swift */; };
 		C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4409CF62117BE4F00C4B631 /* WelcomeViewController.swift */; };
 		C4409CFB2117CC7100C4B631 /* WelcomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4409CFA2117CC7100C4B631 /* WelcomeView.storyboard */; };
+		C4931D7E231025C30024DD5B /* CreatePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4931D7D231025C30024DD5B /* CreatePasswordVC.swift */; };
+		C4931D8023102ED40024DD5B /* ConfirmPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4931D7F23102ED40024DD5B /* ConfirmPassVC.swift */; };
+		C4931D82231050870024DD5B /* CompleteCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4931D81231050870024DD5B /* CompleteCreateVC.swift */; };
 		C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9821126B63003A5091 /* AppDelegate.swift */; };
 		C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4949E9A21126B63003A5091 /* ButtomDemoViewController.swift */; };
 		C4949E9E21126B63003A5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4949E9C21126B63003A5091 /* Main.storyboard */; };
@@ -58,6 +61,9 @@
 		C4409CF32117BD7800C4B631 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		C4409CF62117BE4F00C4B631 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C4409CFA2117CC7100C4B631 /* WelcomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeView.storyboard; sourceTree = "<group>"; };
+		C4931D7D231025C30024DD5B /* CreatePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordVC.swift; sourceTree = "<group>"; };
+		C4931D7F23102ED40024DD5B /* ConfirmPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassVC.swift; sourceTree = "<group>"; };
+		C4931D81231050870024DD5B /* CompleteCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteCreateVC.swift; sourceTree = "<group>"; };
 		C4949E9521126B63003A5091 /* SoftChain Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoftChain Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4949E9821126B63003A5091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4949E9A21126B63003A5091 /* ButtomDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomDemoViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				C4409CF62117BE4F00C4B631 /* WelcomeViewController.swift */,
+				C4931D7D231025C30024DD5B /* CreatePasswordVC.swift */,
+				C4931D7F23102ED40024DD5B /* ConfirmPassVC.swift */,
+				C4931D81231050870024DD5B /* CompleteCreateVC.swift */,
 				C4409CFA2117CC7100C4B631 /* WelcomeView.storyboard */,
 			);
 			path = WelcomeScreen;
@@ -478,14 +487,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43B76192113DE6400BD195A /* UIButtomExt.swift in Sources */,
+				C4931D82231050870024DD5B /* CompleteCreateVC.swift in Sources */,
 				C4949E9B21126B63003A5091 /* ButtomDemoViewController.swift in Sources */,
 				C4949E9921126B63003A5091 /* AppDelegate.swift in Sources */,
 				C4D524F2230EE78000CFFC86 /* GetBalanceServices.swift in Sources */,
 				C4E9BA5A230D9A7D0054AE73 /* HDWallet.swift in Sources */,
+				C4931D7E231025C30024DD5B /* CreatePasswordVC.swift in Sources */,
 				C4409CF72117BE4F00C4B631 /* WelcomeViewController.swift in Sources */,
 				C4D524ED230E9CCC00CFFC86 /* UserDataServices.swift in Sources */,
 				C4D524EB230E9A6000CFFC86 /* ImportVC.swift in Sources */,
 				C4D524F0230EC13200CFFC86 /* Constant.swift in Sources */,
+				C4931D8023102ED40024DD5B /* ConfirmPassVC.swift in Sources */,
 				C4949EA121126B63003A5091 /* SoftChain_Wallet.xcdatamodeld in Sources */,
 				C4409CF42117BD7800C4B631 /* WalletViewController.swift in Sources */,
 			);

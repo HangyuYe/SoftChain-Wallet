@@ -34,6 +34,7 @@ class GetQKCBalance {
                 let json = try! JSON(data: data)
                 let result = json["result"]
                 let balances = result["balances"].array
+                guard balances != nil else { return }
                 for item in balances! {
                     let tokenId = item["tokenStr"].stringValue
                     if tokenId == "QKC" {
