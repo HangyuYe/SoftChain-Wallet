@@ -42,12 +42,10 @@ class WalletViewController: UIViewController {
                 
                 guard let pass = KeychainWrapper.standard.string(forKey: "userPassword") else { return }
                 guard let mnemonic = KeychainWrapper.standard.string(forKey: "mnemonic") else { return }
-                let seed = Mnemonic.createSeed(mnemonic: mnemonic, withPassphrase: pass)
+                let seed = Mnemonic.createSeed(mnemonic: mnemonic)
                 self.wallet = Wallet(seed: seed, coin: .ethereum)
-                for i in 0...60 {
-                    let accounts = self.wallet?.generateAddress(at: UInt32(i))
-                    print(accounts as Any)
-                }
+                let accounts = self.wallet?.generateAccount().address
+                print(accounts as Any)
                 
                 //self.address = self.account?.address
                 //addressLabel.text = address!
